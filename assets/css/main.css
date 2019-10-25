@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Boogaloo|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo|Roboto:400,700&display=swap');
+
+
 
 * {
     margin: 0;
@@ -6,23 +8,29 @@
 }
 
 body {
-
+    background: #1A1A1A;
+    color: #F2F2F2;
 }
 
 h1 {
-    font-family: 'Boogaloo';
+    font-family: 'Boogaloo', cursive;
     font-size: 50px;
     text-transform: uppercase;
 }
 
 h2 {
-
+    font-family: 'Boogaloo';
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 h3 {
-
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: bold;
 }
 
 p {
-
+    font-family: 'Roboto';
+    font-size: 16px;
 }
