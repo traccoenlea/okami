@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Boogaloo|Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+h1 {
+    font-family: 'Boogaloo';
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
