@@ -56,6 +56,7 @@ body {
     color: #F2F2F2;
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 5fr;
     grid-template-areas:
             "nav   header  marge_right"
             "nav     container   marge_right";
