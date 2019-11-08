@@ -1,0 +1,23 @@
+.section_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img_about     text_about";
+}
+
+
+img {
+    grid-area: img_about;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.text_about {
+    grid-area: text_about;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
