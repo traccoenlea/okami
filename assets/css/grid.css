@@ -4,14 +4,19 @@ body {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 1fr 5fr;
-    grid-template-areas:
-            "nav   header  marge_right"
-            "nav     container   marge_right";
+    grid-template-areas: "nav   header  marge_right"
+    "nav    title   marge_right"
+    "nav     container   marge_right"
+    "nav    arrow_down  marge_right";
     min-height: 100vh;
 }
 
 header {
     grid-area: header;
+}
+
+.title {
+    grid-area: title;
 }
 
 .marge_right {
@@ -25,8 +30,16 @@ header {
 
 
 .container {
-    /*margin : auto 175px;*/
     grid-area: container;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrow_down {
+    grid-area: arrow_down;
+    display: flex;
+    justify-content: center;
 }
 
 nav {
