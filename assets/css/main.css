@@ -12,6 +12,14 @@ a {
     text-decoration: none;
 }
 
+a.active {
+    color: #8B6A1B;
+}
+
+a:hover {
+    color: #8B6A1B;
+}
+
 h1 {
     font-family: 'Boogaloo', cursive;
     font-size: 50px;
