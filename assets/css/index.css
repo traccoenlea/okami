@@ -1,3 +1,8 @@
+.first_index {
+    display: block;
+    position: fixed;
+}
+
 .section_about {
     display: grid;
     grid-template-columns: 1fr 1fr;
