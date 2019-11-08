@@ -1,6 +1,7 @@
 .section_about {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
     grid-template-areas: "img_about     text_about";
 }
 
