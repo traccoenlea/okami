@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Okami - Realisation</title>
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/grid.css" type="text/css">
+    <!-- <link rel="stylesheet" href="assets/css/grid.css" type="text/css"> -->
     <link rel="stylesheet" href="assets/css/inspiration.css" type="text/css">
 </head>
 
@@ -22,12 +22,10 @@
     </nav>
 
 
-    <div class="container">
-        <div class="container title">
-            <div class="item">
-                <h1>Trouve ton réalisateur</h1>
-            </div>
-            <div class="container right">
+    <div class="main-container">
+        <div class="title">
+            <h1>Trouve ton réalisateur</h1>
+            <div class="container-right">
                 <div class="item">
                     <div class="dropdown">
                         <button class="dropbtn">Styles <i class="fas fa-chevron-down"></i></button>
@@ -95,62 +93,11 @@
                     <div class="dropdown">
                         <button class="dropbtn">Prix <i class="fas fa-chevron-down"></i></button>
                         <div class="dropdown-content">
-                            <label class="container">Abstract
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Calligtaphie
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Dot work
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Geometique
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Glitch
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Line
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Mandala
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Minimalist
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Negative
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Outline
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Paint
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Paysage
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Sketch
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container">Tribal
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
+                            <section class="range-slider">
+                                <span class="rangeValues"></span>
+                                <input value="0" min="0" max="1000" step="1" type="range">
+                                <input value="1000" min="0" max="1000" step="1" type="range">
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -174,15 +121,19 @@
         <div class="container-gallerie">
             <div class="item">
                 <img src="assets/img/pop_tatoueurs/T1.jpg" alt="tatouage populaire">
+                <p class="nom">John Doe</p>
             </div>
             <div class="item">
                 <img src="assets/img/pop_tatoueurs/T2.jpg" alt="tatouage populaire">
+                <p class="nom">John Doe</p>
             </div>
             <div class="item">
                 <img src="assets/img/pop_tatoueurs/T3.jpg" alt="tatouage populaire">
+                <p class="nom">John Doe</p>
             </div>
             <div class="item">
                 <img src="assets/img/pop_tatoueurs/T4.jpg" alt="tatouage populaire">
+                <p class="nom">John Doe</p>
             </div>
         </div>
 
@@ -191,15 +142,19 @@
         <div class="container-gallerie">
             <div class="item">
                 <img src="assets/img/dot/micka/T1.jpg" alt="tatouage style abstract">
+                <p class="nom">John Doe</p>
             </div>
             <div class="item">
                 <img src="assets/img/dot/micka/T2.jpg" alt="tatouage style abstract">
+                <p class="nom">John Doe</p>
             </div>
             <div class="item">
                 <img src="assets/img/dot/micka/T3.jpg" alt="tatouage style abstract">
+                <p class="nom">John Doe</p>
             </div>
             <div class="item">
                 <img src="assets/img/dot/micka/T4.jpg" alt="tatouage style abstract">
+                <p class="nom">John Doe</p>
             </div>
         </div>
 
@@ -212,6 +167,35 @@
     </div>
 
     <script src="https://kit.fontawesome.com/595ca4abfa.js" crossorigin="anonymous"></script>
+    <script>
+        function getVals() {
+            // Get slider values
+            var parent = this.parentNode;
+            var slides = parent.getElementsByTagName("input");
+            var slide1 = parseFloat(slides[0].value);
+            var slide2 = parseFloat(slides[1].value);
+            // Neither slider will clip the other, so make sure we determine which is larger
+            if (slide1 > slide2) { var tmp = slide2; slide2 = slide1; slide1 = tmp; }
+
+            var displayElement = parent.getElementsByClassName("rangeValues")[0];
+            displayElement.innerHTML = slide1 + "€ - " + slide2 + "€";
+        }
+
+        window.onload = function () {
+            // Initialize Sliders
+            var sliderSections = document.getElementsByClassName("range-slider");
+            for (var x = 0; x < sliderSections.length; x++) {
+                var sliders = sliderSections[x].getElementsByTagName("input");
+                for (var y = 0; y < sliders.length; y++) {
+                    if (sliders[y].type === "range") {
+                        sliders[y].oninput = getVals;
+                        // Manually trigger event first time to display values
+                        sliders[y].oninput();
+                    }
+                }
+            }
+        }
+    </script>
 
 </body>
 

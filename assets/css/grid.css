@@ -1,13 +1,13 @@
 body {
     background: #1A1A1A;
     color: #F2F2F2;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 0.5fr 4fr 0.5fr;
     grid-template-areas: "nav   header  marge_right"
     "nav    title   marge_right"
     "nav     container   marge_right"
-    "nav    arrow_down  marge_right";
+    "nav    arrow_down  marge_right"; */
     min-height: 100vh;
 }
 
