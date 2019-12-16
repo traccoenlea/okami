@@ -339,3 +339,11 @@ body {
   bottom: 15px;
   left: 20px;
 }
+
+
+
+@media (min-width: 100px) and (max-width: 900px) {
+  body {
+    background:red;
+  }
+}
