@@ -43,6 +43,37 @@ nav h1 {
     margin: 0 0 0 15px;
 }
 
+@media screen and (min-width: 200px) and (max-width: 1020px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .title {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        border-bottom: solid 1px #F2F2F2;
+        margin-bottom: 20px;
+    }
+    
+    .container-right {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .container-right .item {
+        margin: 0 0 0 15px;
+    }
+
+    .container-right .first.item {
+        margin: 0 !important;
+    }
+  }
+
 .dropbtn {
     background-color: transparent;
     color: #F2F2F2;
@@ -277,3 +308,102 @@ a.btn {
     justify-content: space-between;
     padding: 10px 0 20px 0;
 }
+
+.container-gallerie .item .img_T1{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: url(../img/pop_tatoueurs/T1.jpg);
+}
+
+.container-gallerie .item .img_T1:hover{
+    background-image: url(../img/dot/micka/T5.jpg);
+}
+
+.container-gallerie .item .img_T2{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: url(../img/pop_tatoueurs/T2.jpg);
+}
+
+.container-gallerie .item .img_T2:hover{
+    background-image: url(../img/dot/micka/T5.jpg);
+}
+
+.container-gallerie .item .img_T3{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: url(../img/pop_tatoueurs/T3.jpg);
+}
+
+.container-gallerie .item .img_T3:hover{
+    background-image: url(../img/dot/micka/T5.jpg);
+}
+
+.container-gallerie .item .img_T4{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: url(../img/pop_tatoueurs/T4.jpg);
+}
+
+.container-gallerie .item .img_T4:hover{
+    background-image: url(../img/dot/micka/T5.jpg);
+}
+
+.container-gallerie .item .img_D1{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: url(../img/dot/micka/T1.jpg);
+}
+
+.container-gallerie .item .img_D1:hover{
+    background-image: url(../img/dot/micka/T5.jpg);
+}
+
+.container-gallerie .item .img_D2{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: url(../img/dot/micka/T2.jpg);
+}
+
+.container-gallerie .item .img_D2:hover{
+    background-image: url(../img/dot/micka/T5.jpg);
+}
+
+.container-gallerie .item .img_D3{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: url(../img/dot/micka/T3.jpg);
+}
+
+.container-gallerie .item .img_D3:hover{
+    background-image: url(../img/dot/micka/T5.jpg);
+}
+
+.container-gallerie .item .img_D4{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image: url(../img/dot/micka/T4.jpg);
+}
+
+.container-gallerie .item .img_D4:hover{
+    background-image: url(../img/dot/micka/T5.jpg);
+}
+
+p.nom {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p.description {
+    /* font-weight: ; */
+    font-size: 14px;
+}
+
