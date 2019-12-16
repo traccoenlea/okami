@@ -1,67 +1,45 @@
-body {
-    overflow: hidden;
-}
-
-.first_index {
-    background: #1A1A1A;
-    color: #F2F2F2;
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 1fr 0.5fr 4fr 0.5fr;
-    grid-template-areas: "nav   header  marge_right"
-                        "nav    title   marge_right"
-                        "nav     container   marge_right"
-                        "nav    arrow_down  marge_right";
-    min-height: 100vh;
-
-}
-
-header {
-    grid-area: header;
-}
-
-.title {
-    grid-area: title;
-}
-
-.marge_right {
-    grid-area: marge_right;
+/* ------ TEST GRID ------ */
+nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 40px 0px 40px 40px;
-    text-align: center;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    left: 40px;
 }
 
+nav h1 {
+    margin: 40px 40px 40px 0px;
+}
+
+.marge_right {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    right: 40px;
+}
+
+.main-container {
+    margin: 50px 120px 0 120px;
+}
+
+/* ------ TITLE ------ */
+.title {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #F2F2F2;
+    margin-bottom: 20px;
+}
+
+
+/* ------ CONTAINER ------ */
 
 .container {
     grid-area: container;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.arrow_down {
-    grid-area: arrow_down;
-    display: flex;
-    justify-content: center;
-}
-
-nav {
-    grid-area: nav;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-nav h1 {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    margin: 40px 40px 40px 0px;
-
 }
 
 
@@ -90,45 +68,27 @@ img {
     margin-left: 50px;
 }
 
-/* SECOND INDEX */
-
-.second_index {
-    /*position: fixed;*/
-    background: #1A1A1A;
-    color: #F2F2F2;
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 1fr 4.5fr 0.5fr;
-    grid-template-areas: "nav   header  marge_right"
-    "nav     container   marge_right"
-    "nav    arrow_down  marge_right";
-    min-height: 100vh;
-}
-.second_index .nav {
-    grid-area: nav;
-}
-
-.second_index .marge_right {
-    grid-area: marge_right;
-}
-
-.second_index .arrow_down {
+.arrow_down {
     grid-area: arrow_down;
+    display: flex;
+    justify-content: center;
 }
 
-.second_index .fas {
+.arrow_down.active {
     color: #8B6A1B;
-    font-size: 250px;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
-.second_index .fa-chevron-right {
-    font-size: 3em;
-    color: #F2F2F2;
+.arrow_down:hover {
+    color: #8B6A1B;
 }
 
-.container_2 {
+
+.section_steps {
+    display: none;
+}
+
+
+.container2 {
     grid-area: container;
     display: flex;
     justify-content: space-between;
@@ -213,8 +173,9 @@ img {
 }
 
 
-
-.second_index a {
-    display: flex;
-    justify-content: space-between;
+.section_steps .fas {
+    color: #8B6A1B;
+    font-size: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
