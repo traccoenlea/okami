@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Okami - Index BIS</title>
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/index_bis.css" type="text/css">
+</head>
+
+<body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<header>
+    <a href="index.html"><img src="assets/img/okami.svg" alt="logo Okami" class="logo"></a>
+</header>
+
+<nav>
+    <h1><a href="inspiration.html" class="active">1.</a></h1>
+    <h1><a href="#">2.</a></h1>
+    <h1><a href="realisation.html">3.</a></h1>
+</nav>
+
+<div class="main-container">
+    <div class="title">
+        <h1>A propos</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="section_about">
+            <div class="img_about"><img src="assets/img/about.jpg" alt="Tatouage tribal"/></div>
+            <div class="text_about">
+                <p>Passionnées de tatouages, nous avons décidé de créer une plateforme permettant aux futurs (nouveaux)
+                    tatoués d’avoir une première version concrète (mais non contractuelle) d’une idée de tatouage. En
+                    effet, lorsque vous n’êtes ni dessinateur ni créatif, il peut être très compliqué d’expliciter une
+                    idée (pourtant très claire) à une autre personne.
+                    Notre éditeur permet alors aux personnes de faire un simple croquis afin d’appuyer leurs propos et
+                    explications auprès de tatoueurs.
+                </p>
+                <br/>
+
+                <b>Créer et simplifier le lien entre les tatoués et les tatoueurs.</b>
+            </div>
+        </div>
+
+        <div class="arrow_down"><i class="fas fa-chevron-down fa-3x"></i></div>
+
+
+        <div class="section_steps">
+
+            <div class="container2">
+
+                <a href="inspiration.html">
+                    <div class="first_step">
+                        <div class="title_step">
+                            <h2>1.<br/>Inspiration</h2>
+                        </div>
+                        <div class="img_step">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="text_step">
+                            <p>Vadrouille sur la page des exemples afin de trouver l’<b>inspiration</b> et peut-être
+                                faire
+                                de
+                                ton idée un croquis.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="creation.html">
+                    <div class="second_step">
+                        <div class="title_step">
+                            <h2>2.<br/>Création</h2>
+                        </div>
+                        <div class="img_step">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="text_step">
+                            <p>Direction notre éditeur de tattoo, simple d’utilisation, il t’aidera à faire de ton
+                                croquis
+                                une <b>création</b>.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="realisation.html">
+                    <div class="third_step">
+                        <div class="title_step">
+                            <h2>3.<br/>Réalisation</h2>
+                        </div>
+                        <div class="img_step">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="text_step">
+                            <p>Visite les profils de nos tatoueurs partenaires et trouve celui (ou celle) qui fera
+                                de ton imagination une <b>réalisation</b>.
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="marge_right">
+        <a href="inspiration.html"><i class="fas fa-chevron-right fa-3x"></i></a>
+    </div>
+</div>
+
+
+<div class="marge_right">
+    <a href="#"><i class="fas fa-chevron-right fa-3x"></i></a>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $(".arrow_down").click(function () {
+            $(".section_about").hide();
+            $(".arrow_down").hide();
+            $(".section_steps").show();
+        });
+
+    });
+
+</script>
+
+
+<script src="https://kit.fontawesome.com/595ca4abfa.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
