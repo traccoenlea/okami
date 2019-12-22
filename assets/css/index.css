@@ -188,6 +188,8 @@ img {
 }
 
 
+
+
 /*RESPONSIVE*/
 
 @media screen and (min-width: 200px) and (max-width: 1020px) {
@@ -266,10 +268,7 @@ img {
         font-size: 150px;
         margin: 30px auto;
     }
-    
-    nav {
-        visibility: hidden;
-    }
+
 
 
     /* MENU */
@@ -277,6 +276,11 @@ img {
         position: relative;
         margin: 0;
         padding: 0;
+    }
+
+    nav {
+        display: none;
+        transform: translate(300px,-300px);
     }
 
     .ham {
