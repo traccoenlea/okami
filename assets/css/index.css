@@ -176,6 +176,142 @@ img {
 .section_steps .fas {
     color: #8B6A1B;
     font-size: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto;
+}
+
+.hr_sections {
+    display: none;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 200px) and (max-width: 1020px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .title {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        border-bottom: solid 1px #F2F2F2;
+        margin-bottom: 20px;
+    }
+
+    .container-right {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .container-right .item {
+        margin: 0 0 0 15px;
+    }
+
+    .container-right .first.item {
+        margin: 0 !important;
+    }
+
+    .arrow_down {
+        display: none;
+    }
+
+    .hr_sections {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .section_steps {
+        display: block;
+    }
+
+    .container2 {
+        grid-area: container;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .first_step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .second_step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .third_step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .section_steps .fas {
+        font-size: 150px;
+        margin: 30px auto;
+    }
+    
+    nav {
+        visibility: hidden;
+    }
+
+
+    /* MENU */
+    .ham {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        transition: transform 400ms;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .hamRotate.active {
+        transform: rotate(45deg);
+    }
+    .hamRotate180.active {
+        transform: rotate(180deg);
+    }
+    .line {
+        fill: none;
+        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+        stroke: #000;
+        stroke-width: 5.5;
+        stroke-linecap: round;
+    }
+    .ham3 .top {
+        stroke-dasharray: 40 130;
+    }
+    .ham3 .middle {
+        stroke-dasharray: 40 140;
+    }
+    .ham3 .bottom {
+        stroke-dasharray: 40 205;
+    }
+    .ham3.active .top {
+        stroke-dasharray: 75 130;
+        stroke-dashoffset: -63px;
+    }
+    .ham3.active .middle {
+        stroke-dashoffset: -102px;
+    }
+    .ham3.active .bottom {
+        stroke-dasharray: 110 205;
+        stroke-dashoffset: -86px;
+    }
+
+
+
 }

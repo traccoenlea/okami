@@ -21,6 +21,8 @@
     <h1><a href="realisation.html">3.</a></h1>
 </nav>
 
+
+
 <div class="main-container">
     <div class="title">
         <h1>A propos</h1>
@@ -45,6 +47,10 @@
         </div>
 
         <div class="arrow_down"><i class="fas fa-chevron-down fa-3x"></i></div>
+
+        <div class="hr_sections">
+            <hr>
+        </div>
 
 
         <div class="section_steps">
@@ -109,7 +115,6 @@
     </div>
 
 
-
 </div>
 
 
@@ -126,6 +131,17 @@
             $(".section_steps").show();
         });
 
+        $(".ham").click(function () {
+            if ($("nav").first().is(":hidden")) {
+                $("nav").show("slow");
+                $("body").css("background", '#8B6A1B');
+            } else {
+                $("nav").slideUp();
+                $("body").css("background", 'white');
+                //    CHANGER LA COULEUR DE FOND
+                // AJOUTER TITRE 1,2,3 !!!!
+            }
+        });
     });
 
 </script>
