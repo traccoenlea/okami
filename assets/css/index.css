@@ -1,4 +1,4 @@
-/* ------ TEST GRID ------ */
+/* ------ GRID ------ */
 nav {
     display: flex;
     flex-direction: column;
@@ -22,6 +22,10 @@ nav h1 {
 
 .main-container {
     margin: 50px 120px 0 120px;
+}
+
+.ham {
+    display: none;
 }
 
 /* ------ TITLE ------ */
@@ -269,7 +273,17 @@ img {
 
 
     /* MENU */
+    header {
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
     .ham {
+        display: block;
+        position: absolute;
+        margin-top: -20px;
+        margin-left: 50px;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
         transition: transform 400ms;
@@ -287,7 +301,7 @@ img {
     .line {
         fill: none;
         transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-        stroke: #000;
+        stroke: #8B6A1B;
         stroke-width: 5.5;
         stroke-linecap: round;
     }
