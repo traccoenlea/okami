@@ -9,6 +9,10 @@ nav {
     left: 40px;
 }
 
+nav .display {
+    display: none;
+}
+
 nav h1 {
     margin: 40px 40px 40px 0px;
 }
@@ -222,6 +226,10 @@ img {
         margin: 0 !important;
     }
 
+    .marge_right {
+        display: none;
+    }
+
     .arrow_down {
         display: none;
     }
@@ -280,7 +288,22 @@ img {
 
     nav {
         display: none;
-        transform: translate(300px,-300px);
+        flex-direction: initial;
+        justify-content: normal;
+        position: initial;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    nav h1 {
+        margin: 40px 0 40px 0;
+    }
+
+    nav .display {
+        display: initial;
     }
 
     .ham {
