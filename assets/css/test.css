@@ -1,49 +1,222 @@
-/*Animation MENU*/
-.ham {
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.hamRotate.active {
-  transform: rotate(45deg);
-}
-.hamRotate180.active {
-  transform: rotate(180deg);
-}
-.line {
-  fill: none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: #000;
-  stroke-width: 5.5;
-  stroke-linecap: round;
-}
-.ham3 .top {
-  stroke-dasharray: 40 130;
-}
-.ham3 .middle {
-  stroke-dasharray: 40 140;
-}
-.ham3 .bottom {
-  stroke-dasharray: 40 205;
-}
-.ham3.active .top {
-  stroke-dasharray: 75 130;
-  stroke-dashoffset: -63px;
-}
-.ham3.active .middle {
-  stroke-dashoffset: -102px;
-}
-.ham3.active .bottom {
-  stroke-dasharray: 110 205;
-  stroke-dashoffset: -86px;
-}
-
-/*NAV*/
+/* ------ GRID ------ */
 nav {
-  display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    left: 40px;
 }
 
+nav .display {
+    display: none;
+}
+
+nav h1 {
+    margin: 40px 40px 40px 0px;
+}
+
+.marge_right {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    right: 40px;
+}
+
+.main-container {
+    margin: 50px 120px 0 120px;
+}
+
+.ham {
+    display: none;
+}
+
+/* ------ TITLE ------ */
+.title {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #F2F2F2;
+    margin-bottom: 20px;
+}
+
+
+/* ------ CONTAINER ------ */
+
+.container {
+    grid-area: container;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+img {
+    grid-area: img_about;
+    width: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto 20px auto;
+}
+
+.section_button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.section_button .create_button {
+    background: #8B6A1B;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #F2F2F2;
+    font-size: 1em;
+    outline: none;
+}
+
+.section_button .create_button:focus {
+    background: #F2F2F2;
+    color: #8B6A1B;
+}
+
+.p_responsive {
+    display: none;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 200px) and (max-width: 1020px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .title {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        border-bottom: solid 1px #F2F2F2;
+        margin-bottom: 20px;
+    }
+
+    .container-right {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .container-right .item {
+        margin: 0 0 0 15px;
+    }
+
+    .container-right .first.item {
+        margin: 0 !important;
+    }
+
+    .marge_right {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    .create_button {
+        display: none;
+    }
+
+    .p_responsive {
+        display: block;
+        font-size: 4em;
+        text-align: center;
+    }
+}
+
+
+/* MENU */
+header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: none;
+    flex-direction: initial;
+    justify-content: normal;
+    position: initial;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+nav h1 {
+    margin: 40px 0 40px 0;
+}
+
+nav .display {
+    display: initial;
+}
+
+.ham {
+    display: block;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 50px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #8B6A1B;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham3 .top {
+    stroke-dasharray: 40 130;
+}
+
+.ham3 .middle {
+    stroke-dasharray: 40 140;
+}
+
+.ham3 .bottom {
+    stroke-dasharray: 40 205;
+}
+
+.ham3.active .top {
+    stroke-dasharray: 75 130;
+    stroke-dashoffset: -63px;
+}
+
+.ham3.active .middle {
+    stroke-dashoffset: -102px;
+}
+
+.ham3.active .bottom {
+    stroke-dasharray: 110 205;
+    stroke-dashoffset: -86px;
+}

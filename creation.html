@@ -41,14 +41,37 @@
 
         <div class="section_creation">
             <img src="assets/img/createur.png" alt="logiciel de création de tattoos"/>
+            <p class="p_responsive">Tu dois te connecter sur un ordinateur pour avoir accès au logiciel de création !</p>
+        </div>
+
+        <div class="section_button">
+           <a href="#"><input type="button" class="create_button" value="C'est parti !"/></a>
         </div>
     </div>
 
-        <div class="arrow_down"><i class="fas fa-chevron-down fa-3x"></i></div>
 
-        <div class="hr_sections">
-            <hr>
-        </div>
+    <script>
+        $(document).ready(function () {
+            $(".ham").click(function () {
+                $('.main-container').hide();
+                $(".fas").hide();
+                if ($("nav").first().is(":hidden")) {
+                    $("nav").show();
+                    $(".line").css("stroke", "#F2F2F2");
+
+                } else {
+                    $("nav").slideUp();
+                    $("body").css("background", '#1A1A1A');
+                    $(".fas").show();
+                    $('.main-container').show();
+                }
+            });
+        });
+
+    </script>
+
+
+
 </div>
 </body>
 </html>
