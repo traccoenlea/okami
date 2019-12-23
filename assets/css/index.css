@@ -239,6 +239,20 @@ img {
         margin-top: 50px;
     }
 
+    .text_about {
+        margin: 20px;
+    }
+
+    .section_about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 50%;
+    }
+
     .section_steps {
         display: block;
     }
@@ -251,26 +265,52 @@ img {
     }
 
 
+    .text_step p {
+        font-size: 2em;
+    }
+
+    .text_step  b {
+        font-size: 1em;
+    }
+
+
+
     .first_step {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 30px auto;
+        justify-content: space-between;
+        width: 700px;
+    }
+
+    .first_step .text_step {
+        padding: 10px;
     }
 
     .second_step {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 30px auto;
+        justify-content: space-between;
+        width: 700px;
     }
+
+    .second_step .text_step {
+        padding: 10px;
+    }
+
 
     .third_step {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 30px auto;
+        justify-content: space-between;
+        width: 700px;
     }
+
+    .third_step .text_step {
+        padding: 10px;
+    }
+
+
+
 
     .section_steps .fas {
         font-size: 150px;
