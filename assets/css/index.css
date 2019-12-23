@@ -279,7 +279,7 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 700px;
+        width: 100%;
     }
 
     .first_step .text_step {
@@ -290,7 +290,7 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 700px;
+        width: 100%;
     }
 
     .second_step .text_step {
@@ -302,7 +302,7 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 700px;
+        width: 100%;
     }
 
     .third_step .text_step {
