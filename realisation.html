@@ -222,25 +222,6 @@
         }
     </script>
 
-    <script>
-        $(document).ready(function () {
-            $(".ham").click(function () {
-                $('.main-container').hide();
-                $(".fas").hide();
-                if ($("nav").first().is(":hidden")) {
-                    $("nav").show();
-                    $(".line").css("stroke", "#F2F2F2");
-
-                } else {
-                    $("nav").slideUp();
-                    $("body").css("background", '#1A1A1A');
-                    $(".fas").show();
-                    $('.main-container').show();
-                }
-            });
-        });
-
-    </script>
 
     <script src="https://kit.fontawesome.com/595ca4abfa.js" crossorigin="anonymous"></script>
 
